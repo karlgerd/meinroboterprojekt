@@ -33,7 +33,6 @@ namespace NezhaPro {
     //% block="stoppe Motor an Anschluss %motor"
     //% blockId=nezha_stop_motor
     //% weight=90
-    //% subcategory="Motor"
     export function stopMotor(motor: Motor): void {
         setMotorSpeed(motor, 0);
     }
