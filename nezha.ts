@@ -29,5 +29,12 @@ namespace NezhaPro {
         pins.i2cWriteBuffer(0x10, buf); // 0x10 als beispielhafte I2C Adresse
         */
     }
+
+    //% block="stoppe Motor an Anschluss %motor"
+    //% blockId=nezha_stop_motor
+    //% weight=90
+    //% subcategory="Motor"
+    export function stopMotor(motor: Motor): void {
+        setMotorSpeed(motor, 0);
+    }
 }
-//Testkommentar: Dies ist ein Testkommentar, um die Funktionalität der Code-Blocks zu überprüfen.
